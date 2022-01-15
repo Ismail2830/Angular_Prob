@@ -1,0 +1,36 @@
+{
+  "Products": [
+    {
+      "id": 1,
+      "name": "Smart Phones",
+      "price": 1000,
+      "quantity": 234,
+      "selected": true,
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Computers",
+      "price": 1650,
+      "quantity": 200,
+      "selected": true,
+      "available": true
+    },
+    {
+      "id": 3,
+      "name": "Smart tv",
+      "price": 2000,
+      "quantity": 340,
+      "selected": true,
+      "available": true
+    },
+    {
+      "id": 4,
+      "name": "ipad",
+      "price": 1010,
+      "quantity": 500,
+      "selected": false,
+      "available": true
+    }
+  ]
+}

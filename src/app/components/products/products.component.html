@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <ul class="navbar navbar-nav">
+    <li>
+      <button (click)="onGetAll()" class="btn btn-outline-info ms-3">
+        All
+      </button>
+    </li>
+    <li>
+      <button class="btn btn-outline-info ms-3">Selected</button>
+    </li>
+    <li>
+      <button class="btn btn-outline-info ms-3">Available</button>
+    </li>
+  </ul>
+</nav>
+<div class="container">
+  <table class="table table-hover" *ngIf="products">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Availale</th>
+        <th scope="col">selected</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+        <td>{{ product.quantity }}</td>
+        <td>{{ product.available }}</td>
+        <td>{{ product.selected }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
